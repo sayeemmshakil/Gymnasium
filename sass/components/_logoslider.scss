@@ -1,0 +1,37 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+/* ---------------------------------------
+            Logo Slider Part Start
+--------------------------------------- */
+#logo{
+    padding: 0 0 80px;
+    .slid{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .next-ar{
+        position: absolute;
+        font-size: 30px;
+        right: -60px;
+        top: 50%;
+        color: $red;
+        width: auto;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+    .prev-ar{
+        position: absolute;
+        font-size: 30px;
+        left: -60px;
+        top: 50%;
+        color: $red;
+        transform: translateY(-50%);
+        z-index: 1;
+        cursor: pointer;
+    }
+
+}
+/* ---------------------------------------
+            Logo Slider Part End
+--------------------------------------- */

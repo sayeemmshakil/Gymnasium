@@ -1,0 +1,55 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+/* ---------------------------------------
+            Gallery Part Start
+--------------------------------------- */
+#gallery{
+    .common_head{
+        h2{
+            @include fs($black, 22px, 400, $oswald);
+            text-transform: uppercase;
+        }
+    }
+    .gallery_banner{
+        padding: 30px 0;
+        position: relative;
+        z-index: 1;
+        margin-top: 20px;
+        &:after{
+            @include after_tl(0, 0, 100%, 100%, rgba(0, 0, 0, 0.8));
+            z-index: -1;
+        }
+        .gallery_img{
+            position: relative;
+            margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            .overly{
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                right: 10px;
+                bottom: 10px;
+                background: rgba(226, 62, 56, 0.5);
+                border: 5px solid rgba(255, 255, 255, 0.5);
+                transform: scale(0);
+                transition: all linear .3s;
+                a{
+                    @include middle();
+                    font-size: 25px;
+                    color: #ffffff;
+                }
+            }
+            &:hover{
+                .overly{
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}
+/* ---------------------------------------
+            Gallery Part End
+--------------------------------------- */
