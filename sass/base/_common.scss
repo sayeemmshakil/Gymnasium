@@ -32,7 +32,14 @@ li {
     margin: 0;
     padding: 0;
 }
-
+.common_head,
+h2{
+    color: #222222;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
 /* ---------------------------------------
             Common CSS End
 --------------------------------------- */ 
