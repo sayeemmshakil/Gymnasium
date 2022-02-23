@@ -6,13 +6,6 @@
 --------------------------------------- */
 #membership{
     padding: 0 0 65px;
-    .common_head{
-        h2{
-            @include fs($black, 22px, 400, $oswald);
-            text-transform: uppercase;
-            padding-top: 30px;
-        }
-    }
     .member-text{
         h3{
             @include fs($black, 16px, 700, $oswald);
@@ -20,7 +13,7 @@
             background: #dddddd;
             text-transform: uppercase;
             transition: all linear .3s;
-            margin-top: 30px;
+            margin-top: 15px;
             line-height: 1;
             &:hover{
                 background: $red;

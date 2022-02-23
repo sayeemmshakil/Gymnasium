@@ -5,18 +5,11 @@
             Classes Part Start
 --------------------------------------- */
 #classes{
-    padding: 0 0 80px;
-    .common_head{
-        h2{
-            @include fs($black, 22px, 400, $oswald);
-            text-transform: uppercase;
-            padding-top: 30px;
-        }
-    }
+    padding: 0 0 60px;
     .class-menu{
         background: #f1f1f1;
         line-height: 50px;
-        margin-top: 20px;
+        margin-top: 15px;
         li{
             width: 16.66%;
             button{
@@ -24,13 +17,13 @@
                 text-align: center;
                 width: 100%;
                 padding: 0;
+                &.active, .show > .nav-link{
+                    background: $red;
+                    color: #ffffff;
+                    width: 100%;
+                    border-radius: 0;
+                }
             }
-        }
-        .active{
-            background: $red;
-            color: #ffffff;
-            width: 100%;
-            border-radius: 0;
         }
     }
     .class-inner{

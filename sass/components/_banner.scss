@@ -21,12 +21,12 @@
             position: relative;
 
             &:after {
-                @include after_tl(0, 18px, 200px, 3px, $red);
+                @include after_tl(0, 18px, 190px, 3px, $red);
                 clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
             }
 
             &:before {
-                @include after_tr(0, 18px, 160px, 3px, $red);
+                @include after_tr(0, 18px, 148px, 3px, $red);
                 clip-path: polygon(0 0, 100% 0%, 100% 100%, 5% 100%);
             }
         }
@@ -38,11 +38,11 @@
             position: relative;
 
             &:after {
-                @include after_tl(0, -30px, 3px, 198px, $red);
+                @include after_tl(0, -30px, 3px, 200px, $red);
             }
 
             &:before {
-                @include after_tr(0, -30px, 3px, 198px, $red);
+                @include after_tr(0, -30px, 3px, 200px, $red);
             }
 
         }

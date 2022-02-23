@@ -5,17 +5,11 @@
             Gallery Part Start
 --------------------------------------- */
 #gallery{
-    .common_head{
-        h2{
-            @include fs($black, 22px, 400, $oswald);
-            text-transform: uppercase;
-        }
-    }
     .gallery_banner{
         padding: 30px 0;
         position: relative;
         z-index: 1;
-        margin-top: 20px;
+        margin-top: 15px;
         &:after{
             @include after_tl(0, 0, 100%, 100%, rgba(0, 0, 0, 0.8));
             z-index: -1;

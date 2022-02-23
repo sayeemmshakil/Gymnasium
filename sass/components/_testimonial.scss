@@ -6,16 +6,9 @@
 --------------------------------------- */
 #testimonial {
     padding: 0 0 30px;
-    .common_head {
-        h2 {
-            @include fs($black, 22px, 400, $oswald);
-            text-transform: uppercase;
-            padding-top: 30px;
-        }
-    }
     .test-inner {
         padding: 30px 0 80px;
-        margin-top: 20px;
+        margin-top: 15px;
         position: relative;
         z-index: 1;
         &::after {
