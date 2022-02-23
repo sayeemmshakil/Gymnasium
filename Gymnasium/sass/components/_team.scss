@@ -1,0 +1,90 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+
+/* ---------------------------------------
+            Team Part Start
+--------------------------------------- */
+#team{
+    padding: 30px 0 20px;
+    .team{
+        padding-top: 65px;
+        transition: all linear .3s;
+        &:hover{
+            transform: translateY(-45px);
+        }
+        .team_img{
+            position: relative;
+            .overly{
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                right: 10px;
+                bottom: 10px;
+                background: rgba(214, 48, 42, 0.5);
+                border: 5px solid #ffffff;
+                transform: scale(0);
+                transition: all linear .3s;
+                ul{
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    li{
+                        a{
+                            font-size: 18px;
+                            width: 30px;
+                            height: 30px;
+                            border: 1px solid #ffffff;
+                            text-align: center;
+                            line-height: 30px;
+                            color: #ffffff;
+                            margin-bottom: 10px;
+                            transition: all linear .3s;
+                            &:hover{
+                                background: #ffffff;
+                                color: #1da0f2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &:hover{
+            .overly{
+                transform: scale(1);
+            }
+        }
+        .team_text{
+            padding: 20px;
+            border: 1px solid transparent;
+            h3{
+                @include fs($black, 14px, 400, $oswald);
+                text-transform: uppercase;
+                margin: -3px 0 5px;
+            }
+            span{
+                @include fs($black, 14px, 400, $oswald);
+            }
+            p{
+                @include fs($black, 13px, 400, $opensans);
+                padding-top: 10px;
+                line-height: 18px;
+                transform: scale(0);
+                transition: all linear .3s;
+            }
+        }
+        &:hover{
+            p{
+                transform: scale(1);
+            }
+        }
+        &:hover{
+            .team_text{
+                border: 1px solid #dddddd;
+            }
+        }
+    }
+}
+/* ---------------------------------------
+            Team Part End
+--------------------------------------- */
